@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body>
+      <div id="root">
+
+      </div>
+
+      <script>
+       let x= React.createElement('div',{id:"first",
+    style:{
+        padding:"30px",
+        backgroundColor:"#D1D1D1"
+    }},[
+            React.createElement('h2',null,"Topic cover"),
+            
+            React.createElement('p',null,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aut!"),
+            React.createElement('a',{href:"w3school.com"},"Getting started with the web"),
+            React.createElement('p',null,'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aut!'),
+            React.createElement('a',{href:"html.com"},"Html structring the web"),
+            React.createElement('p',null,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsa recusandae neque eaque non saepe sequi explicabo mollitia iste obcaecati."),
+            React.createElement('a',{href:"css.com"},"Css styling the web"),
+            React.createElement('p',null,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsa recusandae neque eaque non saepe sequi explicabo mollitia iste obcaecati.")
+        ])
+        ReactDOM.render(x,document.getElementById('root'))
+      </script>
+</body>
+</html>
